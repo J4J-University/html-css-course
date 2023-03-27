@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta
+			name="description"
+			content="In this document we will learn about the most basic HTML elements"
+		/>
+		<title>Examples for the most basic HTML elements</title>
+		<style>
+			:root {
+				font-size: 22px;
+			}
+
+			h1 {
+				font-size: 2rem;
+			}
+
+			section > h2::after {
+				content: '';
+				display: block;
+				height: 1px;
+				background-color: #ccc;
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+			}
+
+			p {
+				width: 75ch;
+			}
+
+			button {
+				font-size: 1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Examples for the most basic HTML elements</h1>
+		<section aria-labelledby="table of content">
+			<h2 id="table of content">Table of content</h2>
+			<ol>
+				<li><a href="#paragraphs">Paragraphs</a></li>
+				<li><a href="#headings">Headings</a></li>
+				<li><a href="#preformatted text">Preformatted text</a></li>
+				<li><a href="#links">Links</a></li>
+				<li><a href="#lists">Lists</a></li>
+				<li><a href="#generic containers">Generic containers</a></li>
+			</ol>
+		</section>
+		<section aria-labelledby="paragraphs">
+			<h2 id="paragraphs">Paragraphs (<code>&lt;p&gt;</code>)</h2>
+			<p>
+				Paragraphs are the most basic element in HTML. They are used to organize
+				the content of a page.
+			</p>
+			<p>
+				Paragraphs are separated from each other by a blank line. In this
+				document, each section is a paragraph.
+			</p>
+			<a href="https://www.w3schools.com/html/html_paragraphs.asp"
+				>More about paragraphs</a
+			>
+		</section>
+		<section aria-labelledby="headings">
+			<h2 id="headings">
+				Headings (<code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>)
+			</h2>
+			<p>
+				Headings are used to organize the content of a page. They are used to
+				define the structure of the page.
+			</p>
+			<p>
+				Headings are separated from each other by a blank line. In this
+				document, each section is a paragraph.
+			</p>
+			<p>
+				Here are all the heading tags, from the most important to the least
+				important:
+			</p>
+
+			<div>
+				<h1>Heading level 1</h1>
+				<h2>Heading level 2</h2>
+				<h3>Heading level 3</h3>
+				<h4>Heading level 4</h4>
+				<h5>Heading level 5</h5>
+				<h6>Heading level 6</h6>
+			</div>
+
+			<a href="https://www.w3schools.com/html/html_headings.asp"
+				>More about headings</a
+			>
+		</section>
+		<section aria-labelledby="preformatted text">
+			<h2 id="preformatted text">
+				Preformatted text (<code>&lt;pre&gt;</code>)
+			</h2>
+			<p>
+				Preformatted text is used to display text that preserves both spaces and
+				line breaks.
+			</p>
+			<p>Here is an example of preformatted text:</p>
+			<pre>
+                This is a preformatted text.
+                It preserves both spaces and line breaks.
+            </pre
+			>
+			<p>Preformatted text is useful to display code, for example:</p>
+
+			<pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Preformatted text example&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Some heading bla bla bla&lt;/h1&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+                    
+            </pre
+			>
+
+			<p>Preformatted text is also useful for ASCII art, for example:</p>
+
+			<pre>
+                .--'''''''''--.
+                .'      .---.      '.
+               /    .-----------.    \
+              /        .-----.        \
+              |       .-.   .-.       |
+              |      /   \ /   \      |
+               \    | .-. | .-. |    /
+                '-._| | | | | | |_.-'
+                    | '-' | '-' |
+                     \___/ \___/
+                  _.-'  /   \  `-._
+                .' _.--|     |--._ '.
+                ' _...-|     |-..._ '
+                       |     |
+                       '.___.'
+                         | |
+                        _| |_
+                       /\( )/\
+                      /  ` '  \
+                     | |     | |
+                     '-'     '-'
+                     | |     | |
+                     | |     | |
+                     | |-----| |
+                  .`/  |     | |/`.
+                  |    |     |    |
+                  '._.'| .-. |'._.'
+                        \ | /
+                        | | |
+                        | | |
+                        | | |
+                       /| | |\
+                     .'_| | |_`.
+                     `. | | | .'
+                  .    /  |  \    .
+                 /o`.-'  / \  `-.`o\
+                /o  o\ .'   `. /o  o\
+                `.___.'       `.___.'
+               
+            </pre
+			>
+
+			<a href="https://www.w3schools.com/html/html_formatting.asp"
+				>More about formatting</a
+			>
+		</section>
+		<section aria-labelledby="links">
+			<h2 id="links">Links (<code>&lt;a&gt;</code>)</h2>
+			<p>
+				Links are used to navigate from one page to another. They are used to
+				create a navigation menu.
+			</p>
+
+			<p>
+				Here is an example of a link to the
+				<a href="https://www.w3schools.com">W3Schools</a> website.
+			</p>
+			<p>
+				For open a link in a new tab, you can use the
+				<code>target</code> attribute:
+				<a href="https://www.w3schools.com" target="_blank"
+					>W3Schools in a new tab</a
+				>
+			</p>
+			<p>
+				You can also create a link to a specific section of the same page. To do
+				so, you need to give an <code>id</code> attribute to the section you
+				want to link to, and then use the <code>#</code> character followed by
+				the <code>id</code> value as the value of the
+				<code>href</code> attribute of the link.
+			</p>
+			<p>
+				Here is an example of a link to the
+				<a href="#links">Links</a> section of this page.
+			</p>
+		</section>
+		<section aria-labelledby="buttons">
+			<h2 id="buttons">Buttons (<code>&lt;button&gt;</code>)</h2>
+			<p>
+				Buttons are used to trigger an action. They are used to create a
+				navigation menu.
+			</p>
+			<p>Here is an example of a button that triggers an alert:</p>
+			<button onclick="alert('Hello world!')">Click me!</button>
+			<p>
+				Buttons can get a <code>&lt;disabled&gt;</code> attribute to disable
+				them:
+			</p>
+			<button disabled>Disabled button</button>
+		</section>
+		<section aria-labelledby="lists">
+			<h2 id="lists">
+				Lists (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>,
+				<code>&lt;li&gt;</code>)
+			</h2>
+			<p>
+				Lists are used to display a list of items. There are two types of lists:
+				ordered lists and unordered lists.
+			</p>
+			<p>Here is an example of an ordered list:</p>
+			<ol>
+				<li>First item</li>
+				<li>Second item</li>
+				<li>Third item</li>
+			</ol>
+			<p>Here is an example of an unordered list:</p>
+			<ul>
+				<li>First item</li>
+				<li>Second item</li>
+				<li>Third item</li>
+			</ul>
+			<p>You can also create nested lists:</p>
+			<ul>
+				<li>First item</li>
+				<li>Second item</li>
+				<li>Third item</li>
+				<li>
+					Fourth item
+					<ul>
+						<li>First item</li>
+						<li>Second item</li>
+						<li>Third item</li>
+					</ul>
+				</li>
+			</ul>
+
+			<p>
+				You can also create a list of links. To do so, you need to use the
+				<code>&lt;a&gt;</code> tag inside the <code>&lt;li&gt;</code> tag.
+			</p>
+			<ul>
+				<li><a href="https://www.w3schools.com">W3Schools</a></li>
+				<li><a href="https://www.google.com">Google</a></li>
+				<li><a href="https://www.youtube.com">YouTube</a></li>
+			</ul>
+
+			<p>
+				You can also create a list of buttons. To do so, you need to use the
+				<code>&lt;button&gt;</code> tag inside the <code>&lt;li&gt;</code> tag.
+			</p>
+
+			<ul>
+				<li><button>Button 1</button></li>
+				<li><button>Button 2</button></li>
+				<li><button>Button 3</button></li>
+			</ul>
+		</section>
+		<section aria-abelledby="generic containers">
+			<h2 id="generic containers">
+				Generic containers (<code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>,
+				<code>&lt;section&gt;</code>)
+			</h2>
+
+			<p>
+				The <code>&lt;div&gt;</code> tag defines a division or a section in an
+				HTML document.
+			</p>
+
+			<p>
+				The <code>&lt;span&gt;</code> tag is an inline container used to mark up
+				a part of a text, or a part of a document.
+			</p>
+
+			<p>
+				The <code>&lt;section&gt;</code> tag defines sections in a document,
+				like chapters, headers, footers, or any other sections of the document.
+			</p>
+
+			<p>Here is an example of a <code>&lt;div&gt;</code> tag:</p>
+			<div>This is a div tag.</div>
+
+			<p>Here is an example of a <code>&lt;span&gt;</code> tag:</p>
+			<span>This is a span tag.</span>
+
+			<p>Here is an example of a <code>&lt;section&gt;</code> tag:</p>
+			<section>This is a section tag.</section>
+		</section>
+	</body>
+</html>
