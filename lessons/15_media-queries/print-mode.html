@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Print Example</title>
+		<style>
+			@media print {
+				body {
+					background-color: white;
+					color: black;
+					font-size: 14pt;
+				}
+				.hide-on-print {
+					display: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="hide-on-print">Print Example</h1>
+		<p>This text should be visible on screen and when printed.</p>
+		<div class="hide-on-print">
+			<p>This text should be hidden when printed.</p>
+			<button onclick="window.print()">Print</button>
+		</div>
+	</body>
+</html>
