@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="sheet1.css" />
+		<title>Add CSS to HTML</title>
+		<style>
+			.blue {
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Let's add some CSS to this HTML!</h1>
+		<section>
+			<h2>Inline CSS</h2>
+			<p>
+				To add CSS to an HTML element, you can use the
+				<code>style</code> attribute.
+			</p>
+			<p>
+				For example, to make the text of this paragraph red, you can use the
+				<code>style</code> attribute and set the value to
+				<code>color: red</code>.
+			</p>
+			<p style="color: red">A red paragraph</p>
+		</section>
+		<section>
+			<h2>Internal CSS</h2>
+			<p>
+				To add CSS to an HTML document, you can use the
+				<code>&lt;style&gt;</code> element.
+			</p>
+			<p>
+				For example, to make the text in the <code>&lt;span&gt;</code> blue, you
+				can use the <code>&lt;style&gt;</code> element and set the value to
+				<code>color: blue</code>. <span class="blue">I'm a blue span!</span>
+			</p>
+		</section>
+		<section>
+			<h2>External CSS</h2>
+			<p>To add CSS to an HTML document, you can use an external CSS file.</p>
+			<p>
+				For example, to make the text in the <code>&lt;span&gt;</code> green,
+				you can use an external CSS file and set the value to
+				<code>color: green</code>.
+			</p>
+			<span class="green">I'm a green span!</span>
+		</section>
+		<section>
+			<h2>@import</h2>
+			<p>
+				You can use the <code>@import</code> rule to import an external CSS file
+				into another CSS file.
+			</p>
+			<p>
+				For example, we define a salmon color to a class in the stylesheet named
+				<code>sheet2.css</code> and then we import it in the stylesheet named
+				<code>sheet1.css</code>.
+			</p>
+			<p>
+				And now we can use the <span class="salmon">salmon</span> color in the
+				HTML document
+			</p>
+		</section>
+	</body>
+</html>
